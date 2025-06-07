@@ -18,7 +18,9 @@ def revenue_to_number(rev):
 
     def convert_part(part):
         part = part.strip()
-        if part.endswith('M'):
+        if part.endswith('B'):
+            return float(part[:-1])*1000
+        elif part.endswith('M'):
             return float(part[:-1])
         elif part.endswith('K'):
             return float(part[:-1]) / 1000
