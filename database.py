@@ -150,4 +150,4 @@ def fetch_leads_with_scores():
     query = "SELECT * FROM leads WHERE LeadScore IS NOT NULL ORDER BY LeadScore DESC"
     engine = get_engine()
     df = pd.read_sql(query, engine)
-    return df
+    return df 

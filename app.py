@@ -33,8 +33,8 @@ if menu == "Home":
                     st.dataframe(
                         df_scored[["Company", "Lead Score"]].sort_values(
                             by="Lead Score", ascending=False
-                        )
-                    )
+                        ) 
+                    ) 
                 except Exception as e:
                     st.error(f"❌ Error during scoring or saving: {e}")
 

@@ -9,7 +9,7 @@ def load_model_and_preprocessor():
 
 # Convert revenue string to numeric value
 def revenue_to_number(rev):
-    if pd.isnull(rev):
+    if pd.isnull(rev): 
         return 0
     rev = rev.replace('$', '').replace('+', '').upper().strip()
     parts = rev.split('-')

@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, r2_score
 import joblib
 
-# Step 1: Load data
+# Step 1: Load data 
 data = pd.read_csv('lead_scoring_dataset.csv')
 
 # Step 2: Convert Revenue to numeric
